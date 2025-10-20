@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teenify"
+version = "0.1.0"
+description = "A playful tool to convert plain Turkish text into exaggerated teen speak."
+authors = [ { name = "Teenify Dev", email = "teenify@example.com" } ]
+
+# No third-party dependencies are specified here to ensure this project can
+# be used in restricted environments without internet access. All code
+# resides within this repository and relies only on the Python standard
+# library.
+dependencies = []
+requires-python = ">=3.8"
+
+[project.scripts]
+teenify = "teenify.cli:main"
